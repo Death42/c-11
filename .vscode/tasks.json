@@ -24,11 +24,11 @@
       "label": "Compile And Run",
       "command": "start",
       "args": [
-				"cmd",
-				"/c",
-				"\"${workspaceFolder}.\\program.exe & echo[ & pause\""
-			],
-			"dependsOn" :["Compile"],
+        "cmd",
+        "/c",
+        "\"${workspaceFolder}.\\program.exe & echo[ & pause\""
+        ],
+      "dependsOn" :["Compile"],
       "options": {
         "cwd": "${workspaceFolder}"
       },
