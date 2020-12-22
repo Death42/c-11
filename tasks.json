@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "shell",
+      "label": "Compile",
+      "command": "g++.exe",
+      "args": [
+        "-std=c++17",
+        "${workspaceFolder}/main.cpp",
+        "-o",
+        "${workspaceFolder}/program.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    }, 
+    {
+      "type": "shell",
+      "label": "Compile And Run",
+      "command": "start",
+      "args": [
+				"cmd",
+				"/c",
+				"\"${workspaceFolder}.\\program.exe & echo[ & pause\""
+			],
+			"dependsOn" :["Compile"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    }
+  ]
+}
