@@ -6,7 +6,7 @@
       "label": "Compile",
       "command": "g++.exe",
       "args": [
-        "-std=c++17",
+        "-std=c++11",
         "${workspaceFolder}/main.cpp",
         "-o",
         "${workspaceFolder}/program.exe"
