@@ -4,7 +4,7 @@
     {
       "type": "shell",
       "label": "Compile",
-      "command": "g++.exe",
+      "command": "g++",
       "args": [
         "-std=c++11",
         "${workspaceFolder}/main.cpp",
